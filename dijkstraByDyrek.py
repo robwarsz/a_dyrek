@@ -15,7 +15,7 @@ for _ in range(E):
     adj[a].append((b,w))    #tuple
     adj[b].append((a,w))
 
-start = 1
+start = 2
 dist[start] = 0
 li = [ (0,start)]     #(dystans, numerWierzcholka)
 heapq.heapify([li])
