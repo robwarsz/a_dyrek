@@ -25,6 +25,7 @@ while li:
         v,weight = x
         if dist[v] > dist[u]+weight:
             dist[v]=dist[u]+weight
-            heapq.heappush(li,dist[v],v)
+            heapq.heappush(li, (dist[v],v))
 
 print(dist[1:])
+print(dist)
